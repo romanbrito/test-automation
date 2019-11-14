@@ -1,4 +1,5 @@
 const {Builder, By, Key, until} = require('selenium-webdriver');
+const { userName } = require('../config/config');
 
 (async function example() {
   let driver = await new Builder().forBrowser('chrome').build();
