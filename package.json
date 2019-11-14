@@ -1,0 +1,25 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "description": "selenium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romanbrito/test-automation.git"
+  },
+  "keywords": [
+    "selenium"
+  ],
+  "author": "Roman Brito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romanbrito/test-automation/issues"
+  },
+  "homepage": "https://github.com/romanbrito/test-automation#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  }
+}
