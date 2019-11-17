@@ -24,15 +24,21 @@ describe("Smoke Test", () => {
         var create_sign_button = $("//button[text()='Create New Sign']");
         create_sign_button.click();
 
-        $("#newSignName").waitForEnabled(10000);
+        $(".modal-content").waitForEnabled(3000);
+
+        $("#newSignName").waitForEnabled(3000);
         var signName = "test";
         $("#newSignName").setValue( signName );
 
         $("#newPresentationName").waitForEnabled(10000);
-        $("#newPresentationName").setValue( "first" );
+        var presentationName = "first"
+        $("#newPresentationName").setValue( presentationName );
 
         // var element = $("//button[text()='Create']");
-        // element.click();
+
+        var element = $("#createSignModal .modal-footer button.btn.btn-primary").waitForEnabled(10000);
+
+        element.click();
 
         // $("#fileupload").waitForEnabled(3000);
         // $("#fileupload").setValue("~/Workspace/test-automation/media/BlackBoardLandscape.jpeg");
