@@ -36,9 +36,9 @@ describe("Smoke Test", () => {
 
         // var element = $("//button[text()='Create']");
 
-        var element = $("#createSignModal .modal-footer button.btn.btn-primary").waitForEnabled(10000);
-
-        element.click();
+        $("#createSignModal .modal-footer button.btn.btn-primary").waitForEnabled(10000);
+        var create = $("#createSignModal .modal-footer button.btn.btn-primary");
+        create.click();
 
         // $("#fileupload").waitForEnabled(3000);
         // $("#fileupload").setValue("~/Workspace/test-automation/media/BlackBoardLandscape.jpeg");
