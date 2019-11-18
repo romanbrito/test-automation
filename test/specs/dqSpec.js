@@ -1,7 +1,7 @@
 const { userName, password, serverUrl } = require('../../config/config');
 
 describe("Smoke Test", () => {
-    it("Confirm user can Upload Image", () => {
+    it("Can Upload Image", () => {
         browser.url( serverUrl );
         $("#user_login").waitForEnabled(3000);
         $("#user_pass").waitForEnabled(3000);
