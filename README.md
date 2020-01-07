@@ -34,3 +34,11 @@ To run tests:
 $`npm run test` 
 or
 $`./node_modules/.bin/wdio`
+
+
+# Note include a config/config.js file with content like so:
+`module.exports = {
+    userName:'userName',
+    password:'password',
+    serverUrl:'https://env.menuboardmanager.com/cms'
+}`
