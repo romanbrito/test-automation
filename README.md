@@ -31,6 +31,6 @@ The configuration tool created the following configuration file:
 
 # How to run the tests
 To run tests:
-$`npm run tests` 
+$`npm run test` 
 or
 $`./node_modules/.bin/wdio`
